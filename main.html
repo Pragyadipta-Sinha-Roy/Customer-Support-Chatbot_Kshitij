@@ -1,0 +1,1260 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+   </body>
+</html><htmlCode>
+<div id="root">
+    <nav id="navbar" class="fixed w-full z-50 bg-neutral-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 animate__animated animate__fadeIn">
+                    <a href="#" class="text-xl font-bold">SupportBot</a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#hero" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#features" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Features</a>
+                        <a href="#howItWorks" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">How It Works</a>
+                        <a href="#benefits" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Benefits</a>
+                        <a href="#pricing" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+                        <a href="#testimonials" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Testimonials</a>
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md hover:bg-neutral-700 focus:outline-none">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#hero" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="#features" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Features</a>
+                    <a href="#howItWorks" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">How It Works</a>
+                    <a href="#benefits" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Benefits</a>
+                    <a href="#pricing" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Pricing</a>
+                    <a href="#testimonials" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+                    <a href="#contact" class="block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.getElementsByTagName('a');
+        for (const link of mobileLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="hero" class="pt-16 min-h-[70vh] bg-neutral-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Column -->
+                <div class="space-y-8 animate__animated animate__fadeInLeft">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                        Intelligent Customer Support
+                        <span class="text-blue-500">Powered by AI</span>
+                    </h1>
+                    <p class="text-xl text-neutral-300">
+                        "Smart Shopping, Smarter Solutions – Your Product Guide and Troubleshooter!"
+                    </p>
+                    <script src="auth.js" defer></script>
+                    <div class="flex flex-wrap gap-4">
+                       <a href = "C:\Users\KIIT0001\Documents\Kshitij_fullstack\register-login.html"> <button class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 animate__animated animate__pulse animate__infinite" >
+                           Get Started Free
+                        </button></a>
+                        <button class="border border-neutral-500 hover:border-blue-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+                            Watch Demo
+                        </button>
+                    </div>
+                    <div id="content">
+                        <!-- Registration form will be dynamically loaded here -->
+                    </div>
+                   
+                    <div class="flex items-center gap-4 text-neutral-400">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 rounded-full bg-neutral-700 flex items-center justify-center">
+                                <span class="text-sm">★</span>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-neutral-700 flex items-center justify-center">
+                                <span class="text-sm">★</span>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-neutral-700 flex items-center justify-center">
+                                <span class="text-sm">★</span>
+                            </div>
+                        </div>
+                        <p class="text-sm">
+                            Trusted by 1000+ companies worldwide
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="relative animate__animated animate__fadeInRight">
+                    <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-xl p-8">
+                        <div class="bg-neutral-800 rounded-lg p-6 shadow-xl">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="bg-neutral-700 p-4 rounded-lg">
+                                    <p class="text-sm">Hello! How can I help you today?</p>
+                                </div>
+                                <div class="bg-blue-600 p-4 rounded-lg ml-auto max-w-[80%]">
+                                    <p class="text-sm">I need help with my order #12345</p>
+                                </div>
+                                <div class="bg-neutral-700 p-4 rounded-lg">
+                                    <p class="text-sm">I can help you with that! Let me check your order status...</p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 bg-neutral-400 rounded-full animate-bounce"></div>
+                                    <div class="w-2 h-2 bg-neutral-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                                    <div class="w-2 h-2 bg-neutral-400 rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Powerful Features for Modern Support</h2>
+                <p class="text-neutral-600 text-lg max-w-2xl mx-auto">Experience the next generation of customer support with our AI-powered features designed to enhance efficiency and satisfaction.</p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-neutral-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">24/7 Availability</h3>
+                    <p class="text-neutral-600">Never miss a customer inquiry with round-the-clock automated support that never sleeps.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-neutral-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Product Discovery</h3>
+                    <p class="text-neutral-600">Helps users find the perfect product using easy search and filtration options.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-neutral-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Instant Responses</h3>
+                    <p class="text-neutral-600">Lightning-fast responses powered by advanced AI to handle queries instantly.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-neutral-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Simplified Troubleshooting</h3>
+                    <p class="text-neutral-600">Provides quick, step-by-step solutions for product issues.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-neutral-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Data Analytics</h3>
+                    <p class="text-neutral-600">Comprehensive insights and analytics to optimize your customer support strategy.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-neutral-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Instant Access to Manuals</h3>
+                    <p class="text-neutral-600">Offers simplified product manuals for easy understanding and problem-solving.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="howItWorks" class="py-20 bg-neutral-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">How SupportBot Works</h2>
+                <p class="text-neutral-300 text-lg max-w-2xl mx-auto">Simple integration, powerful results. Get started in minutes.</p>
+            </div>
+
+            <!-- Steps -->
+            <div class="relative">
+                <!-- Connection Line -->
+                <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-blue-600 -translate-y-1/2"></div>
+
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <!-- Step 1 -->
+                    <div class="relative animate__animated animate__fadeInUp">
+                        <div class="bg-neutral-800 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+                            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                <span class="text-xl font-bold">1</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4 text-center">Quick Search</h3>
+                            <p class="text-neutral-400 text-center">Add a single line of product discription to integrate our AI chatbot.</p>
+                            <div class="mt-6 bg-neutral-700 p-4 rounded-lg">
+                                <code class="text-blue-400 text-sm">ex~
+                                    Latest gaming laptops within a budget of ₹50,000.
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                        <div class="bg-neutral-800 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+                            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                <span class="text-xl font-bold">2</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4 text-center">AI Training</h3>
+                            <p class="text-neutral-400 text-center">Our AI learns from your search and past support interactions.</p>
+                            <div class="mt-6 flex justify-center">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div>
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+                                    <div class="w-2 h-2 bg-blue-400 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                        <div class="bg-neutral-800 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+                            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                <span class="text-xl font-bold">3</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4 text-center">Result</h3>
+                            <p class="text-neutral-400 text-center">Your AI support assistant is ready to handle customer queries 24/7.</p>
+                            <div class="mt-6">
+                                <div class="w-16 h-16 mx-auto bg-green-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="mt-16 text-center animate__animated animate__fadeIn">
+                <button class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+                    Start Integration Now
+                </button>
+                <p class="mt-4 text-neutral-400">No credit card required • Free trial available</p>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="benefits" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose SupportBot?</h2>
+                <p class="text-neutral-600 text-lg max-w-2xl mx-auto">Transform your customer support experience with measurable benefits and proven results.</p>
+            </div>
+
+            <!-- Benefits Cards -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 - Cost Savings -->
+                <div class="bg-gradient-to-br from-blue-50 to-white p-1 rounded-2xl shadow-lg animate__animated animate__fadeInUp">
+                    <div class="bg-white p-6 rounded-xl h-full">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Reduce Costs by 70%</h3>
+                        <p class="text-neutral-600 mb-4">Lower support costs while maintaining high-quality customer service through AI automation.</p>
+                        <ul class="space-y-2 text-neutral-600">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Reduced staffing needs
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Lower operational costs
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 - Response Time -->
+                <div class="bg-gradient-to-br from-blue-50 to-white p-1 rounded-2xl shadow-lg animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                    <div class="bg-white p-6 rounded-xl h-full">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Instant Responses</h3>
+                        <p class="text-neutral-600 mb-4">Eliminate wait times with immediate responses to customer queries, any time of day.</p>
+                        <ul class="space-y-2 text-neutral-600">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                24/7 availability
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                No queue times
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 - Satisfaction -->
+                <div class="bg-gradient-to-br from-blue-50 to-white p-1 rounded-2xl shadow-lg animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                    <div class="bg-white p-6 rounded-xl h-full">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">95% Satisfaction Rate</h3>
+                        <p class="text-neutral-600 mb-4">Consistently high customer satisfaction through accurate and helpful responses.</p>
+                        <ul class="space-y-2 text-neutral-600">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Improved customer experience
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Higher retention rates
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="mt-20 grid md:grid-cols-3 gap-8 text-center">
+                <div class="animate__animated animate__fadeIn">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">500K+</div>
+                    <p class="text-neutral-600">Queries Handled Monthly</p>
+                </div>
+                <div class="animate__animated animate__fadeIn" style="animation-delay: 0.2s">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">98%</div>
+                    <p class="text-neutral-600">Resolution Rate</p>
+                </div>
+                <div class="animate__animated animate__fadeIn" style="animation-delay: 0.4s">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">5x</div>
+                    <p class="text-neutral-600">Faster Response Time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="pricing" class="py-20 bg-neutral-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-neutral-300 text-lg max-w-2xl mx-auto">Choose the perfect plan for your business needs</p>
+            </div>
+
+            <!-- Pricing Toggle -->
+            <div class="flex justify-center items-center mb-12 animate__animated animate__fadeIn">
+                <span class="text-neutral-300">Monthly</span>
+                <label class="mx-4 relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" id="pricing-toggle">
+                    <div class="w-14 h-7 bg-neutral-700 peer-focus:outline-none rounded-full peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-blue-500 after:rounded-full after:h-6 after:w-6 after:transition-all"></div>
+                </label>
+                <span class="text-neutral-300">Annual <span class="text-blue-500 text-sm">(Save 20%)</span></span>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Starter Plan -->
+                <div class="bg-neutral-800 rounded-2xl p-8 transition-transform duration-300 hover:transform hover:-translate-y-2 animate__animated animate__fadeInUp">
+                    <div class="text-center mb-8">
+                        <h3 class="text-xl font-bold mb-4">Starter</h3>
+                        <div class="text-4xl font-bold mb-2">₹29<span class="text-lg text-neutral-400">/mo</span></div>
+                        <p class="text-neutral-400">Perfect for small businesses</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Up to 1,000 conversations/mo
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Basic AI training
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Email support
+                        </li>
+                    </ul>
+                    <button id="starter-plan" class="w-full py-3 px-6 rounded-lg bg-blue-600 hover:bg-blue-700 transition-colors duration-300">Get Started</button>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="bg-blue-600 rounded-2xl p-8 transition-transform duration-300 hover:transform hover:-translate-y-2 relative animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-green-500 text-white px-4 py-1 rounded-full text-sm">Most Popular</span>
+                    </div>
+                    <div class="text-center mb-8">
+                        <h3 class="text-xl font-bold mb-4">Professional</h3>
+                        <div class="text-4xl font-bold mb-2">₹99<span class="text-lg text-neutral-200">/mo</span></div>
+                        <p class="text-neutral-200">For growing companies</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-white mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Up to 10,000 conversations/mo
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-white mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Advanced AI training
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-white mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            24/7 Priority support
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-white mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Custom integrations
+                        </li>
+                    </ul>
+                    <button id="professional-plan" class="w-full py-3 px-6 rounded-lg bg-white text-blue-600 hover:bg-neutral-100 transition-colors duration-300">Get Started</button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="bg-neutral-800 rounded-2xl p-8 transition-transform duration-300 hover:transform hover:-translate-y-2 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                    <div class="text-center mb-8">
+                        <h3 class="text-xl font-bold mb-4">Enterprise</h3>
+                        <div class="text-4xl font-bold mb-2">Custom</div>
+                        <p class="text-neutral-400">For large organizations</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Unlimited conversations
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Custom AI model
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Dedicated account manager
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            SLA guarantee
+                        </li>
+                    </ul>
+                    <button id="enterprise-plan" class="w-full py-3 px-6 rounded-lg border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors duration-300">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+
+        <script>
+            const pricingToggle = document.getElementById('pricing-toggle');
+            pricingToggle.addEventListener('change', function() {
+                // Add pricing toggle functionality here
+                console.log('Pricing toggle changed');
+            });
+        </script>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="testimonials" class="py-24 bg-neutral-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white">What Our Users Say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-neutral-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                            <span class="text-xl font-bold text-white">PS</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold text-white">Priya Sharma</h4>
+                            <p class="text-neutral-400">Jaipur,Rajasthan</p>
+                        </div>
+                    </div>
+                    <p class="text-neutral-300">"I was looking for the perfect air purifier for my home but didn’t know where to start. 
+                        That’s when this AI chatbot became a lifesaver. It helped me filter through the options and find the exact model that suited my budget and requirements. 
+                        A few months later, when I faced an issue with the filter, I simply mentioned the product UID in the chatbot. Within minutes, it provided a step-by-step guide to fix the problem myself. 
+                        No need to call customer care or wait for a technician. 
+                        It’s so convenient and cost-effective—just what every customer needs!"</p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-neutral-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
+                            <span class="text-xl font-bold text-white">AP</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold text-white">Arun Prakash</h4>
+                            <p class="text-neutral-400">Chennai,Tamil Nadu</p>
+                        </div>
+                    </div>
+                    <p class="text-neutral-300">"As someone who prefers online shopping, I often struggle with finding the right products among so many options.
+                         This chatbot made the whole process effortless. I needed a water heater with specific features, and it guided me to the perfect choice in no time.
+                          Later, when I encountered a heating issue, I was amazed at how the chatbot gave me a simplified manual and a troubleshooting guide. I fixed it myself without spending extra money or time.
+                         It’s truly a game-changer for modern customers!"<p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-neutral-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                            <span class="text-xl font-bold text-white">SP</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold text-white">Sneha Patel</h4>
+                            <p class="text-neutral-400">Ahmedabad,Gujarat</p>
+                        </div>
+                    </div>
+                    <p class="text-neutral-300">"This AI chatbot is like having a personal shopping assistant! 
+                        It helped me pick the best smartphone by narrowing down options based on my preferences.
+                         A month after purchase, I had a minor issue with the screen settings, and instead of panicking, I reached out to the chatbot.
+                          It instantly shared the troubleshooting steps tailored to my product. I solved it within minutes! No need for a technician or additional costs.
+                         This is innovation at its best, and I can’t recommend it enough!"</p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="integrations" class="py-24 bg-neutral-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Seamless Integrations</h2>
+                <p class="text-neutral-400 text-lg max-w-2xl mx-auto">Connect our AI chatbot with your favorite tools and platforms for a unified support experience</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Slack Integration -->
+                <div class="bg-neutral-800 p-8 rounded-xl hover:shadow-2xl transition-all duration-300 border border-neutral-700">
+                    <div class="bg-blue-500/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6 15a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12-4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm8-8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Slack Integration</h3>
+                    <p class="text-neutral-400 mb-4">Seamlessly connect with Slack to manage customer queries directly from your workspace</p>
+                    <div class="flex items-center text-blue-400">
+                        <span class="mr-2">Learn more</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Zendesk Integration -->
+                <div class="bg-neutral-800 p-8 rounded-xl hover:shadow-2xl transition-all duration-300 border border-neutral-700">
+                    <div class="bg-green-500/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Zendesk Integration</h3>
+                    <p class="text-neutral-400 mb-4">Integrate with Zendesk to maintain consistent customer support records and history</p>
+                    <div class="flex items-center text-blue-400">
+                        <span class="mr-2">Learn more</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- API Integration -->
+                <div class="bg-neutral-800 p-8 rounded-xl hover:shadow-2xl transition-all duration-300 border border-neutral-700">
+                    <div class="bg-purple-500/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-purple-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h2v2H6zm0 4h8v2H6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">REST API</h3>
+                    <p class="text-neutral-400 mb-4">Custom integration capabilities with our comprehensive REST API documentation</p>
+                    <div class="flex items-center text-blue-400">
+                        <span class="mr-2">Learn more</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300">
+                    View All Integrations
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="contact" class="py-24 bg-neutral-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-neutral-800 rounded-2xl overflow-hidden shadow-xl">
+                <div class="grid md:grid-cols-2 gap-0">
+                    <!-- Contact Info -->
+                    <div class="p-8 md:p-12 bg-neutral-700">
+                        <h2 class="text-3xl font-bold text-white mb-6">Get in Touch</h2>
+                        <p class="text-neutral-300 mb-8">Have questions about our AI chatbot? We're here to help you improve your customer support experience.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-neutral-600 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-white font-semibold">Email</h3>
+                                    <p class="text-neutral-400">support@aichatbot.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-neutral-600 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-white font-semibold">Phone</h3>
+                                    <p class="text-neutral-400">+91 7667958180</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-neutral-600 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-white font-semibold">Location</h3>
+                                    <p class="text-neutral-400">Patia Bhubaneswar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="p-8 md:p-12">
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-neutral-300 mb-2" for="name">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:border-blue-500 text-white" placeholder="Your name">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-neutral-300 mb-2" for="email">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:border-blue-500 text-white" placeholder="your@email.com">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-neutral-300 mb-2" for="subject">Subject</label>
+                                <select id="subject" name="subject" class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:border-blue-500 text-white">
+                                    <option value="">Select a subject</option>
+                                    <option value="sales">Sales Inquiry</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="demo">Request Demo</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-neutral-300 mb-2" for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:border-blue-500 text-white" placeholder="Your message"></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <footer id="footer" class="bg-neutral-900 pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">AI Support Bot</h3>
+                    <p class="text-neutral-400 mb-6">Next-generation customer support powered by artificial intelligence.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.17.056 1.97.246 2.415.41a4.92 4.92 0 0 1 1.792 1.162 4.92 4.92 0 0 1 1.162 1.792c.164.445.354 1.245.41 2.415.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.056 1.17-.246 1.97-.41 2.415a4.92 4.92 0 0 1-1.162 1.792 4.92 4.92 0 0 1-1.792 1.162c-.445.164-1.245.354-2.415.41-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.17-.056-1.97-.246-2.415-.41a4.92 4.92 0 0 1-1.792-1.162 4.92 4.92 0 0 1-1.162-1.792c-.164-.445-.354-1.245-.41-2.415C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.056-1.17.246-1.97.41-2.415a4.92 4.92 0 0 1 1.162-1.792A4.92 4.92 0 0 1 5.597 2.573c.445-.164 1.245-.354 2.415-.41C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.691 0 8.287.014 7.052.072 5.794.13 4.716.304 3.771.593A6.913 6.913 0 0 0 1.46 1.46 6.913 6.913 0 0 0 .593 3.771c-.289.945-.463 2.023-.521 3.281C.014 8.287 0 8.691 0 12c0 3.309.014 3.713.072 4.948.058 1.258.232 2.336.521 3.281a6.913 6.913 0 0 0 .867 2.311 6.913 6.913 0 0 0 2.311.867c.945.289 2.023.463 3.281.521C8.287 23.986 8.691 24 12 24c3.309 0 3.713-.014 4.948-.072 1.258-.058 2.336-.232 3.281-.521a6.913 6.913 0 0 0 2.311-.867 6.913 6.913 0 0 0 .867-2.311c.289-.945.463-2.023.521-3.281.058-1.235.072-1.639.072-4.948 0-3.309-.014-3.713-.072-4.948-.058-1.258-.232-2.336-.521-3.281a6.913 6.913 0 0 0-.867-2.311A6.913 6.913 0 0 0 20.229.593c-.945-.289-2.023-.463-3.281-.521C15.713.014 15.309 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.998 3.998 0 1 1 0-7.996 3.998 3.998 0 0 1 0 7.996zm6.406-11.845a1.44 1.44 0 1 1 0-2.88 1.44 1.44 0 0 1 0 2.88z"/>
+                        </svg>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a2.999 2.999 0 0 0-2.11-2.123C19.553 3.5 12 3.5 12 3.5s-7.553 0-9.388.563A2.999 2.999 0 0 0 .502 6.186C0 8.027 0 12 0 12s0 3.973.502 5.814a2.999 2.999 0 0 0 2.11 2.123C4.447 20.5 12 20.5 12 20.5s7.553 0 9.388-.563a2.999 2.999 0 0 0 2.11-2.123C24 15.973 24 12 24 12s0-3.973-.502-5.814zM9.75 15.334V8.666L15.5 12l-5.75 3.334z"/>
+                            </svg>
+                            
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">API Reference</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Knowledge Base</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Stay Updated</h4>
+                    <p class="text-neutral-400 mb-4">Subscribe to our newsletter for the latest updates and news.</p>
+                    <form class="space-y-4">
+                        <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg focus:outline-none focus:border-blue-500 text-white">
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-neutral-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-neutral-400 text-sm mb-4 md:mb-0">© 2024 AI Support Bot. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-neutral-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-neutral-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                        <a href="#" class="text-neutral-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+
+</htmlCode>

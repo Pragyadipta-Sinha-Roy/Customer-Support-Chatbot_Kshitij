@@ -1,0 +1,151 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a gradient background */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Sunset gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+/* Style the authentication container with a glass effect */
+.auth-container {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 1s ease-out;
+}
+
+/* Add animation for fading in */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Style the header */
+.auth-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: slideIn 0.8s ease-out;
+}
+
+/* Slide-in animation for the header */
+@keyframes slideIn {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Style the form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Style for the input fields */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  margin-top: 8px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #ff7e5f;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient button */
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+button[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+/* Style for the social media buttons */
+button[type="button"] {
+  background: #1da1f2; /* Twitter blue */
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+button[type="button"]:hover {
+  background-color: #1b91d7;
+  transform: scale(1.05);
+}
+
+button[type="button"]:nth-child(2) {
+  background: #24292f; /* GitHub dark gray */
+}
+
+button[type="button"]:nth-child(2):hover {
+  background-color: #444c56;
+}
+
+/* Paragraph styling */
+p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Responsive styling */
+@media (max-width: 480px) {
+  .auth-container {
+      padding: 25px;
+  }
+
+  button[type="submit"], button[type="button"] {
+      font-size: 14px;
+      padding: 12px;
+  }
+}
