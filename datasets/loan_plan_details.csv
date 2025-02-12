@@ -1,0 +1,11 @@
+PlanID,PlanName,InterestRate (%),MaxLoanAmount (INR),Tenure (Years),ProcessingFee (%),EligibilityCriteria,SpecialFeatures
+PLAN001,Personal Loan - Basic,12.5,500000,5,1.0,"Minimum salary of INR 20,000 per month",Quick disbursal within 48 hours
+PLAN002,Home Loan - Standard,8.5,5000000,30,0.5,"Income proof, property documents",Tax benefits under Section 80C
+PLAN003,Car Loan - Premium,9.8,1500000,7,0.8,"Minimum salary of INR 25,000 per month",Affordable EMI options
+PLAN004,Education Loan - Student,10.5,2000000,15,0.6,"Student proof, guarantor required",Low-interest rates for meritorious students
+PLAN005,Gold Loan - Express,11.0,200000,3,1.2,Gold valuation certificate,No prepayment penalty
+PLAN006,Business Loan - Growth,13.5,2500000,10,1.5,Business income proof,Higher loan limits for established businesses
+PLAN007,Agriculture Loan - Rural,7.8,1000000,7,0.7,Land ownership proof,Subsidized rates for farmers
+PLAN008,Two-Wheeler Loan - Easy,10.2,750000,3,0.9,"Minimum salary of INR 15,000 per month",Minimal documentation
+PLAN009,Wedding Loan - Special,13.0,1000000,5,1.3,Marriage invitation/proof,Custom EMI holiday option
+PLAN010,Travel Loan - Adventure,14.5,500000,3,1.4,Travel tickets and itinerary,Travel insurance included

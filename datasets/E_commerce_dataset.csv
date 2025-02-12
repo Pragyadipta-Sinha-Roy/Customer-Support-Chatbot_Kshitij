@@ -1,0 +1,51 @@
+Customer ID,Order ID,Customer Name,Delivery Address,Order Purchase Date,Order Status,Phone Number,Order Arrival Date,Order Delivered Date,Payment Mode,Refund Possible
+CUST0001,ORD000001,Vivaan Reddy,"456, Park Street, Pune",2024-07-31,Pending,9410285955,2024-08-07,,Cash on Delivery,No
+CUST0002,ORD000002,Aarav Sharma,"28, Linking Road, Delhi",2024-07-06,Cancelled,8722137703,2024-07-16,,Net Banking,Yes
+CUST0003,ORD000003,Aditya Reddy,"209, Linking Road, Kolkata",2023-07-15,Cancelled,6987890381,2023-07-21,,Credit Card,Yes
+CUST0004,ORD000004,Saanvi Gupta,"28, MG Road, Kolkata",2024-06-24,Cancelled,6712321285,2024-07-02,,Cash on Delivery,Yes
+CUST0005,ORD000005,Aanya Khan,"415, Brigade Road, Mumbai",2023-07-19,Delivered,7970539921,2023-07-28,2023-07-29,Credit Card,No
+CUST0006,ORD000006,Vihaan Chopra,"160, Linking Road, Chennai",2024-12-25,Shipped,8288686037,2025-01-02,,Cash on Delivery,No
+CUST0007,ORD000007,Saanvi Sharma,"186, Park Street, Bangalore",2024-08-08,Cancelled,8184711309,2024-08-18,,Debit Card,Yes
+CUST0008,ORD000008,Diya Gupta,"265, Linking Road, Delhi",2024-09-21,Shipped,7732114251,2024-09-28,,Debit Card,No
+CUST0009,ORD000009,Arjun Mishra,"285, Anna Salai, Delhi",2024-07-23,Delivered,9754295826,2024-07-28,2024-07-29,Credit Card,No
+CUST0010,ORD000010,Aditya Nair,"186, Park Street, Pune",2024-12-28,Delivered,9480765985,2025-01-05,2025-01-07,UPI,No
+CUST0011,ORD000011,Myra Gupta,"208, Park Street, Chennai",2024-03-05,Shipped,7458232923,2024-03-12,,Debit Card,No
+CUST0012,ORD000012,Myra Iyer,"9, Anna Salai, Bangalore",2024-06-13,Delivered,8270269294,2024-06-21,2024-06-23,Debit Card,No
+CUST0013,ORD000013,Aarav Sharma,"180, Anna Salai, Delhi",2023-06-11,Shipped,8505273777,2023-06-20,,Cash on Delivery,No
+CUST0014,ORD000014,Myra Chopra,"51, Brigade Road, Kolkata",2023-05-21,Cancelled,9530341635,2023-05-30,,Net Banking,Yes
+CUST0015,ORD000015,Diya Patel,"320, MG Road, Mumbai",2023-02-14,Cancelled,7312551544,2023-02-23,,Credit Card,Yes
+CUST0016,ORD000016,Arjun Khan,"424, Park Street, Mumbai",2023-06-14,Delivered,6583538290,2023-06-20,2023-06-21,Cash on Delivery,No
+CUST0017,ORD000017,Arjun Mishra,"142, Anna Salai, Bangalore",2023-09-27,Delivered,8866593030,2023-10-02,2023-10-03,Credit Card,No
+CUST0018,ORD000018,Arjun Khan,"343, Linking Road, Delhi",2024-05-19,Shipped,7504781531,2024-05-28,,Credit Card,No
+CUST0019,ORD000019,Aditya Mishra,"289, Linking Road, Delhi",2023-08-12,Shipped,9325118919,2023-08-19,,Credit Card,No
+CUST0020,ORD000020,Myra Nair,"168, Park Street, Chennai",2024-10-24,Shipped,8838264802,2024-10-31,,UPI,No
+CUST0021,ORD000021,Vihaan Patel,"278, Anna Salai, Delhi",2023-09-22,Pending,7562304492,2023-09-29,,Cash on Delivery,No
+CUST0022,ORD000022,Aarav Sharma,"253, Park Street, Delhi",2023-12-28,Shipped,7832975213,2024-01-06,,Cash on Delivery,No
+CUST0023,ORD000023,Myra Reddy,"166, Park Street, Kolkata",2024-02-20,Shipped,7846689789,2024-02-25,,Net Banking,No
+CUST0024,ORD000024,Aarav Sharma,"69, Brigade Road, Pune",2024-10-25,Shipped,7245406486,2024-11-01,,Debit Card,No
+CUST0025,ORD000025,Saanvi Chopra,"73, Park Street, Kolkata",2023-01-26,Pending,9089461422,2023-02-02,,Debit Card,No
+CUST0026,ORD000026,Arjun Nair,"194, Anna Salai, Bangalore",2023-08-05,Pending,6701248343,2023-08-13,,Debit Card,No
+CUST0027,ORD000027,Aanya Verma,"320, Connaught Place, Kolkata",2024-10-09,Cancelled,9838339774,2024-10-17,,Debit Card,Yes
+CUST0028,ORD000028,Aanya Reddy,"125, Anna Salai, Bangalore",2023-11-30,Cancelled,7032386700,2023-12-06,,Net Banking,Yes
+CUST0029,ORD000029,Aarav Khan,"143, MG Road, Mumbai",2024-08-03,Shipped,9160739473,2024-08-11,,UPI,No
+CUST0030,ORD000030,Vivaan Patel,"24, Brigade Road, Pune",2023-09-27,Shipped,9095573284,2023-10-02,,Debit Card,No
+CUST0031,ORD000031,Aarav Sharma,"207, Anna Salai, Delhi",2023-10-05,Pending,8586576066,2023-10-13,,Cash on Delivery,No
+CUST0032,ORD000032,Diya Gupta,"247, Brigade Road, Delhi",2024-10-15,Delivered,7826409373,2024-10-23,2024-10-24,UPI,No
+CUST0033,ORD000033,Aditya Khan,"250, Linking Road, Chennai",2024-07-01,Cancelled,6358868284,2024-07-10,,UPI,Yes
+CUST0034,ORD000034,Aanya Nair,"28, Linking Road, Mumbai",2023-03-02,Shipped,9624505099,2023-03-11,,Debit Card,No
+CUST0035,ORD000035,Saanvi Iyer,"156, Brigade Road, Delhi",2023-06-27,Pending,7771920781,2023-07-07,,UPI,No
+CUST0036,ORD000036,Diya Sharma,"6, Anna Salai, Mumbai",2024-02-29,Cancelled,8548845297,2024-03-07,,Cash on Delivery,Yes
+CUST0037,ORD000037,Saanvi Sharma,"429, Connaught Place, Chennai",2024-07-25,Shipped,7669552280,2024-07-31,,Credit Card,No
+CUST0038,ORD000038,Vihaan Sharma,"39, Park Street, Chennai",2023-12-07,Pending,8400630733,2023-12-12,,UPI,No
+CUST0039,ORD000039,Vivaan Nair,"485, Park Street, Pune",2024-10-12,Shipped,9383031690,2024-10-17,,Debit Card,No
+CUST0040,ORD000040,Arjun Reddy,"381, Brigade Road, Pune",2023-07-06,Delivered,6782716899,2023-07-13,2023-07-15,Net Banking,No
+CUST0041,ORD000041,Vivaan Chopra,"489, Anna Salai, Pune",2024-05-27,Pending,9663150210,2024-06-04,,Credit Card,No
+CUST0042,ORD000042,Saanvi Khan,"336, Linking Road, Chennai",2023-07-01,Cancelled,9790134699,2023-07-08,,Cash on Delivery,Yes
+CUST0043,ORD000043,Vihaan Chopra,"47, Anna Salai, Pune",2024-04-06,Delivered,7904046740,2024-04-13,2024-04-14,Cash on Delivery,No
+CUST0044,ORD000044,Saanvi Nair,"456, MG Road, Kolkata",2024-07-10,Cancelled,9178683054,2024-07-15,,Net Banking,Yes
+CUST0045,ORD000045,Vihaan Chopra,"270, Park Street, Mumbai",2023-02-07,Pending,6150466943,2023-02-15,,Cash on Delivery,No
+CUST0046,ORD000046,Aanya Chopra,"327, MG Road, Kolkata",2023-01-31,Cancelled,9503743794,2023-02-08,,Debit Card,Yes
+CUST0047,ORD000047,Vihaan Patel,"67, Connaught Place, Kolkata",2024-03-18,Cancelled,9116503443,2024-03-28,,Net Banking,Yes
+CUST0048,ORD000048,Anaya Iyer,"6, MG Road, Delhi",2024-01-11,Shipped,8195458555,2024-01-16,,Credit Card,No
+CUST0049,ORD000049,Arjun Nair,"125, Linking Road, Mumbai",2024-11-12,Pending,9069505200,2024-11-22,,Net Banking,No
+CUST0050,ORD000050,Vivaan Khan,"382, Linking Road, Kolkata",2023-12-06,Pending,9099467563,2023-12-15,,Cash on Delivery,No

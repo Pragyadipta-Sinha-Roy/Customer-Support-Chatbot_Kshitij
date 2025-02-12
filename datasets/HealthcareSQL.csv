@@ -1,0 +1,21 @@
+Hospital Name,Location,Doctor ID,Doctor Name,Specialization,Patient Name,Patient Unique ID,Beds Available,Beds Occupied,Occupied Bed Patient Name,Occupied Bed Patient ID,Available Ambulances
+Apollo Hospital,New Delhi,D-001,Dr. Rohit Sharma,Cardiology,Ravi Kumar,PT-1001,40,15,Mohan Singh,PT-1101,5
+Apollo Hospital,New Delhi,D-002,Dr. Nisha Gupta,Neurology,Sneha Gupta,PT-1002,40,16,Sapna Verma,PT-1102,5
+Apollo Hospital,New Delhi,D-003,Dr. Amit Bansal,Orthopedics,Arun Das,PT-1003,40,17,Rajesh Rao,PT-1103,5
+Apollo Hospital,New Delhi,D-004,Dr. Priya Malhotra,Pediatrics,Nidhi Chauhan,PT-1004,40,18,Anil Agarwal,PT-1104,5
+Fortis Hospital,Bengaluru,D-005,Dr. Karthik Iyer,Cardiology,Mukesh Jain,PT-1005,50,20,Snehal Joshi,PT-1105,4
+Fortis Hospital,Bengaluru,D-006,Dr. Renu Verma,Oncology,Priyanka Singh,PT-1006,50,21,Amit Goyal,PT-1106,4
+Fortis Hospital,Bengaluru,D-007,Dr. Vikram Reddy,Neurology,Kavita Menon,PT-1007,50,22,Deepak Kaur,PT-1107,4
+Fortis Hospital,Bengaluru,D-008,Dr. Ayesha Khan,Gynecology,Pooja Patil,PT-1008,50,23,Rishi Srivastava,PT-1108,4
+Max Healthcare,Mumbai,D-009,Dr. Shashank Sinha,Cardiology,Nikhil Vyas,PT-1009,45,18,Rupa Shetty,PT-1109,3
+Max Healthcare,Mumbai,D-010,Dr. Kavita Patel,Radiology,Ajay Thomas,PT-1010,45,19,Meera Subramani,PT-1110,3
+Max Healthcare,Mumbai,D-011,Dr. Rahul Kulkarni,Orthopedics,Farhan Ali,PT-1011,45,20,Jaya Ghosh,PT-1111,3
+Max Healthcare,Mumbai,D-012,Dr. Diya Dhawan,Dermatology,Rakesh Mehta,PT-1012,45,21,Shilpa Kapoor,PT-1112,3
+AIIMS,New Delhi,D-013,Dr. Naveen Kumar,Cardiology,Geeta Sharma,PT-1013,60,25,Anand Tripathi,PT-1113,6
+AIIMS,New Delhi,D-014,Dr. Anjali Bhatt,Neurology,Karan Luthra,PT-1014,60,26,Manoj Aggarwal,PT-1114,6
+AIIMS,New Delhi,D-015,Dr. Saurabh Joshi,Oncology,Dhara Vaidya,PT-1015,60,27,Jyoti Saxena,PT-1115,6
+AIIMS,New Delhi,D-016,Dr. Meenakshi Rathore,Pediatrics,Tarun Pandey,PT-1016,60,28,Priya Shah,PT-1116,6
+Manipal Hospital,Chennai,D-017,Dr. Aravind Swaminathan,Cardiology,Vishal Nair,PT-1017,55,24,Savita Reddy,PT-1117,5
+Manipal Hospital,Chennai,D-018,Dr. Surbhi Das,Neurology,Komal Pillai,PT-1018,55,25,Jayadev Rao,PT-1118,5
+Manipal Hospital,Chennai,D-019,Dr. Vivek Chopra,Gastroenterology,Sudhir Yadav,PT-1019,55,26,Meeta Bose,PT-1119,5
+Manipal Hospital,Chennai,D-020,Dr. Pooja Sekhar,Orthopedics,Harshita Jain,PT-1020,55,27,Kiran Das,PT-1120,5
